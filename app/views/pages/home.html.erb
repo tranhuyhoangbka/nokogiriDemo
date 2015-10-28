@@ -1,1 +1,6 @@
-<%= debug @doc %>
+<%= @doc.inner_html %><br>
+<%= @doc_xml.xpath("//character")[0].to_s %><br>
+<%= @doc_xml.xpath("//dramas//character") %><br>
+<%= @doc_xml.at_css("sitcoms name") %><br>
+<%= @car_tires %>
+<%= @bike_tires %>
